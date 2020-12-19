@@ -7,9 +7,7 @@
   "scripts": {
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "tsc",
-    "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "jest"
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
