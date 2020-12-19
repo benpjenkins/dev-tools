@@ -12,8 +12,17 @@
     "url": "git+https://github.com/benpjenkins/eslint-config-zissou.git"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
     "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "babel-eslint": "^10.1.0",
@@ -30,7 +39,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.16.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-html": "^6.1.0",

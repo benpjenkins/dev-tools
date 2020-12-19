@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
-  parser: 'babel-eslint',
+  extends: ['airbnb', 'plugin:@typescript-eslint/recommended', 'prettier', 'prettier/react'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
@@ -14,5 +14,11 @@ module.exports = {
     jquery: true,
     jest: true,
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
+  rules: {
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0
+  },
+  ignorePatterns: [ "build/*" ] ,
+  plugins: ['@typescript-eslint', 'html', 'prettier', 'react-hooks'],
 };
