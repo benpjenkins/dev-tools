@@ -38,17 +38,18 @@ const buttonSizes = {
 };
 
 const setBackgroundColor = (props: Props): string => {
-  console.log("props", props);
   const { backgroundColor, theme, variant } = props;
+
+  // TODO: refactor this to follow linting rules and probably honestly start this component over from scratch
   if (backgroundColor) {
     return backgroundColor;
-  } else if (theme[variant]) {
+  } if (theme[variant]) {
     return theme[variant];
-  } else if (variant) {
+  } if (variant) {
     return defaultTheme[variant];
-  } else {
+  } 
     return defaultTheme.primary;
-  }
+  
 };
 
 export const Button = styled.button.attrs<Props>((props) => ({

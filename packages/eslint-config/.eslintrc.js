@@ -17,7 +17,11 @@ module.exports = {
   rules: {
     "import/no-unresolved": 0,
     "import/extensions": 0,
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    // there is a typescript rule to catch no-use-before-define
+    // this rule results in false positives with typescript
+    "no-use-before-define": 0
   },
   ignorePatterns: [ "build/*" ] ,
   plugins: ['@typescript-eslint', 'html', 'prettier', 'react-hooks'],
