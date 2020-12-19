@@ -19,7 +19,6 @@
     "@bjenk/eslint-config": "file:../eslint-config",
     "@testing-library/jest-dom": "^5.10.0",
     "@testing-library/react": "^10.2.1",
-
     "@types/jest": "^26.0.19",
     "@typescript-eslint/eslint-plugin": "^3.2.0",
     "@typescript-eslint/parser": "^3.2.0",
