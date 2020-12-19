@@ -1,16 +1,5 @@
-// import React from "react";
 import styled from "styled-components";
 import defaultTheme from "../../constants";
-
-// enum Variant {
-//   primary = "primary",
-//   secondary = "secondary",
-//   success = "success",
-//   warning = "warning",
-//   danger = "danger",
-//   info = "info",
-//   dark = "dark",
-// }
 
 type Variant =
   | "primary"
@@ -47,9 +36,9 @@ const setBackgroundColor = (props: Props): string => {
     return theme[variant];
   } if (variant) {
     return defaultTheme[variant];
-  } 
+  }
     return defaultTheme.primary;
-  
+
 };
 
 export const Button = styled.button.attrs<Props>((props) => ({

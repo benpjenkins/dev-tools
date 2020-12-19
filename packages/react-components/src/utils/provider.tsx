@@ -2,18 +2,18 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { Normalize } from "styled-normalize";
 
-interface Theme {
+interface ThemeItem {
   key: string;
   value: any;
 }
 
-interface ThemeObj {
-  [key: string]: Theme;
+interface Theme {
+  [key: string]: ThemeItem;
 }
 
 interface Props {
   children: React.ReactNode;
-  theme: ThemeObj;
+  theme: Theme;
 }
 
 export const Provider = ({ children, theme }: Props): React.ReactNode => (
