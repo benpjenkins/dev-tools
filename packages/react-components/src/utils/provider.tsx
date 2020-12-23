@@ -4,10 +4,10 @@ import { Normalize } from "styled-normalize";
 
 interface ThemeItem {
   key: string;
-  value: any;
+  value: unknown;
 }
 
-interface Theme {
+export interface Theme {
   [key: string]: ThemeItem;
 }
 

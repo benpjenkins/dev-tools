@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import defaultTheme from "../../constants";
+import { Theme } from '../../utils/provider'
 
 type Variant =
   | "primary"
@@ -16,7 +17,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   // will probably remove background color once variant functionality is fleshed out
   backgroundColor?: string;
   disabled?: boolean;
-  theme: any;
+  theme: unknown;
 }
 
 const buttonSizes = {
